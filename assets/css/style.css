@@ -1,0 +1,154 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Lato", sans-serif;
+}
+
+html, body {
+	width: 100%;
+	color: #333333;
+}
+
+h1, h2 {
+	color: #2F80ED;
+}
+
+h2 {
+	font-size: 36px;
+	text-align: center;
+	font-weight: 500;
+}
+
+.container {
+	width: 95%;
+	width: calc(100%-40px);
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+.jumbotron {
+	height: 422px;
+	background: linear-gradient(180deg, #56E9F2 0%, #2F80ED 100%), #333333;
+	box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
+	color: rgb(255, 255, 255);
+	text-align: center;
+	z-index: 100;
+	position: relative;
+}
+
+.jumbotron h1 {
+	color: rgb(255, 255, 255);
+	padding-top: 110px;
+	padding-bottom: 15px;
+	font-size: 72px;
+	font-weight: 900;
+	text-shadow: 0px 4px 80px rgba(51, 51, 51, 0.3);
+}
+
+button.default {
+	width: 256px;
+	height: 53.64px;
+	font-size: 20px;
+	font-weight: 900;
+	outline: none;
+	border-radius: 30px;
+	border: 3px solid #333333;
+	box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);
+	background-color: transparent;
+	margin: 1ch;
+}
+
+button.default:hover {
+	cursor: pointer;
+}
+
+button.default:active {
+	position: relative;
+	top: 2px;
+	box-shadow: none;
+}
+
+button.image {
+	border: none;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+button.image:active {
+	transition: none;
+	filter: brightness(80%);
+	-webkit-filter: brightness(80%);
+}
+
+button.image.join-slack {
+	color: #FFFFFF;
+	background-image: url('../images/join-slack@1x.png');
+}
+
+button.image.view-hashtag {
+	color: #FFFFFF;
+	background-image: url('../images/view-hashtag@1x.png');
+}
+
+.jumbotron button.default {
+	margin-top: 30px;
+	color: rgb(255, 255, 255);
+	background-color: transparent;
+	border: 3px solid #FFFFFF;
+}
+
+.jumbotron button.default:active {
+}
+
+.jumbotron .scroll-down {
+	margin-top: 40px;
+}
+
+i.icon.icon-arrow {
+	width: 40px;
+	height: 25px;
+	background-image: url('../images/arrow.svg');
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+
+.pane {
+	padding: 5em 0;
+}
+
+.pane.pane-gray {
+	background-color: #F2F2F2;
+}
+
+.pane .pane-button {
+	margin-top: 1em;
+}
+
+.pane h2 {
+	margin-bottom: 1em;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.channel-name:before {
+	content: '#';
+	color: #2D9CDB;
+}
+
+.channel-introduction > section {
+	width: 311px;
+	height: 187px;
+	display: inline-block;
+	text-align: center;
+	padding: 40px 30px;
+	box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+	margin: 5px;
+}
+
+.channel-introduction > section p {
+	margin-top: 1.8em;
+}

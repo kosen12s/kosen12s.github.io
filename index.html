@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>kosen12s</title>
+		<link rel="stylesheet" href="./assets/css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	</head>
+	<body>
+		<header class="jumbotron">
+			<div class="container">
+				<h1>kosen12s</h1>
+				<p>2012年に高専に入学した人のコミュニティ</p>
+				<button class="default join-slack">Join kosen12s</button>
+				<section class="scroll-down animation-wave">
+					<i class="icon icon-arrow"></i>
+				</section>
+			</div>
+		</header>
+		<section class="pane pane-gray">
+			<div class="container">
+				<h2>What is kosenXXs?</h2>
+				<p class="text-center">kosenXXs は 20XX 年に高専に入学した人が自由に参加できるコミュニティのシリーズです。<br />
+				自由に自由な人々が集まってペチャクチャ喋ったり自由なことをしたりします。<br />
+				オンラインでの活動の場は Slack 上に置かれています。</p>
+				<section class="pane-button text-center">
+					<button class="default image join-slack">Join kosen12s Slack</button>
+					<button class="default image view-hashtag">View #kosen12s Tweets</button>
+				</section>
+			</div>
+		</section>
+		<section class="pane">
+			<div class="container channel-introduction text-center">
+				<h2>Topics & Study Channels</h2>
+				<section>
+					<h3 class="channel-name">study_android</h3>
+					<p>Android の開発について<br />話すチャンネル</p>
+				</section>
+				<section>
+					<h3 class="channel-name">study_ios</h3>
+					<p>iOSのアプリ開発について<br />話すチャンネル</p>
+				</section>
+				<section>
+					<h3 class="channel-name">study_backend</h3>
+					<p>バックエンド開発について<br />話すチャンネル</p>
+				</section>
+				<section>
+					<h3 class="channel-name">study_frontend</h3>
+					<p>フロントエンド好きな人集まれー！</p>
+				</section>
+				<section>
+					<h3 class="channel-name">study_ml</h3>
+					<p>マシンラーニングについて話すチャンネル</p>
+				</section>
+				<section>
+					<h3 class="channel-name">study_network</h3>
+					<p>いつかっネットワークの一番星になる！</p>
+				</section>
+				<section>
+					<h3 class="channel-name">study_splatoon</h3>
+					<p>イカ好きな人が集まるチャンネル</p>
+				</section>
+				<section>
+					<h3 class="channel-name">introduction</h3>
+					<p>自己紹介するチャンネル</p>
+				</section>
+				<section>
+					<h3 class="channel-name">hackathon</h3>
+					<p>ハッカソン企画用チャンネル</p>
+				</section>
+			</div>
+		</section>
+	</body>
+<script>
+window.onload = function(){
+	Array.from(document.querySelectorAll('.join-slack'), function(e){
+		e.addEventListener('click', function(event){
+			location.href='https://twitter.com/intent/tweet?text=@at_sushi_at%20kosen12s%20%E5%8F%82%E5%8A%A0%E5%B8%8C%E6%9C%9B';
+		})
+	});
+	Array.from(document.querySelectorAll('.view-hashtag'), function(e){
+		e.addEventListener('click', function(event){
+			location.href='https://twitter.com/search?q=%23kosen12s';
+		})
+	});
+};
+</script>
+</html>
